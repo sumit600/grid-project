@@ -1,0 +1,193 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+color: white;
+}
+
+html,
+body {
+height: 100%;
+width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url(download\ \(9\).jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    display: grid;
+    padding: 20px;
+    gap: 18px;
+    grid-template-columns: 1fr 450px 1fr 1fr 1fr;
+    grid-template-rows:   8vh 150px 250px 30px 250px ;
+
+    grid-template-areas: "nav nav nav nav nav"
+                         "aside center center left left"
+                         "aside center center left1 left2"
+                         "aside center-bar center-bar center-bar center-bar"
+                         "aside bottom-left bottom bottom-right bottom-right1"
+    ;
+
+}
+main::-webkit-scrollbar{
+    display: none;
+}
+main > *{
+    border-radius: 12px;
+}
+
+nav{
+    background-color: transparent;
+    backdrop-filter: blur(20px) ;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 52px;
+    
+}
+nav div{
+    display: flex;
+    gap: 12px;
+}
+nav i{
+    font-size: 1.2rem;
+}
+.search{
+    border: 2px solid white;
+    border-radius: 14px;
+    background: white;
+    padding: 0 22px; 
+}
+.search i {
+    color: gray;
+}
+.search input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+input{
+    width: 72px;
+    color: black;
+}
+
+.user{
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: aside;
+    background-color: darkcyan;
+    gap: 34px;   
+    background-color: transparent;
+    backdrop-filter: blur(20px) ;
+}
+.side ul li{
+   
+    margin-bottom: 10px;
+}
+.side ul li i{
+   padding: 0px 6px ;
+}
+.sidebottom{
+    width: 100px;
+    display: flex;
+}
+
+ul{  
+    list-style: none;
+}
+
+#center{
+    background-color: darkblue;
+    grid-area: center;  
+    overflow: hidden;   
+}
+
+#center img{
+    height: 100%;
+    width: 100%;   
+    object-fit: cover;
+}
+
+#left1{
+    background-color: transparent;
+    backdrop-filter: blur(20px) ;
+    grid-area: left;
+    padding: 16px 24px;
+    
+}
+#left1 button{
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding: 4px 12px;
+    cursor: pointer;
+
+}
+
+#left2{
+    background-color: darkmagenta;
+    grid-area: left1;
+    background-image: url(Flow\ -\ paper\ poster.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#left3{
+    background-color: darkviolet ;
+    grid-area: left2;
+    background-image: url(download\ \(5\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#bottom{
+    background-color: darkslateblue;
+    grid-area: bottom;
+    background-image: url(download\ \(13\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#bottom-left{
+    background-color: darkseagreen ;
+    grid-area: bottom-left;
+    background-image: url(download\ \(10\).jpeg);
+    background-size:cover ;
+    background-position: bottom;
+}
+#bottom-right{
+    background-color: darkred;
+    grid-area: bottom-right;
+    background-image: url(download\ \(12\).jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#bottom-right1{
+    background-color: darkred;
+    grid-area: bottom-right1;
+    background-image: url(AVENGERS\ ENDGAME\ _\ YENİLMEZLER\ SON\ OYUN.jpeg);
+    background-size: cover;
+}
+#center-bar{
+    background-color: transparent;
+    backdrop-filter: blur(20px) ;
+    grid-area: center-bar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+}
